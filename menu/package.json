@@ -1,0 +1,17 @@
+{
+  "name": "heti-menu",
+  "version": "1.0.0",
+  "description": "Heti menü szerkesztő alkalmazás Netlify-en",
+  "main": "netlify/functions/menu.js",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo 'Build script not needed for this project'"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.0.0"
+  }
+}

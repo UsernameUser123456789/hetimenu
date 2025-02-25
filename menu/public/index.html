@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heti Menü</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://skanditrend.hu/img/cms/Inspir%C3%A1ci%C3%B3k/ReggeliGreengate/reggeli-a-greengatettel2.jpg" alt="Asztal étellel">
+    </header>
+    <div class="container">
+        <div class="mai-menu">
+            <span class="mai-menu-cim">Mai Menü:</span>
+            <span id="mai-menu-etel">Betöltés...</span>
+        </div>
+        <button id="menu-button">Mutasd a heti menüt</button>
+        <button id="edit-button">Heti menü szerkesztése</button>
+        <table id="heti-menu-table" class="hidden">
+            <thead>
+                <tr>
+                    <th>Nap</th>
+                    <th>Menü</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- A táblázat tartalma itt jön dinamikusan -->
+            </tbody>
+        </table>
+
+        <!-- Szerkesztési űrlap -->
+        <div id="edit-form" class="hidden">
+            <h2>Heti menü szerkesztése</h2>
+            <form id="menu-form">
+                <label for="hetfo">Hétfő:</label>
+                <input type="text" id="hetfo" name="hetfo"><br>
+
+                <label for="kedd">Kedd:</label>
+                <input type="text" id="kedd" name="kedd"><br>
+
+                <label for="szerda">Szerda:</label>
+                <input type="text" id="szerda" name="szerda"><br>
+
+                <label for="csutortok">Csütörtök:</label>
+                <input type="text" id="csutortok" name="csutortok"><br>
+
+                <label for="pentek">Péntek:</label>
+                <input type="text" id="pentek" name="pentek"><br>
+
+                <button type="submit">Mentés</button>
+                <button type="button" id="cancel-button">Mégse</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
